@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+
+<style>
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+
+<body>
+<center><h1><font color="white">Fraud Detection</h1></center>
+<h2>     </h2>
+
+<div align="center" style="margin-right: 30%;
+    margin-left: 30%;">
+
+  <form method="POST">
+  <form action="/action_page.php">
+    <label for="V2"></label>
+    <input type="number"  step="any"  id="V2" name="V2" placeholder="V2" >
+
+    <label for="V4"></label>
+    <input type="number"  step="any"  id="V4" name="V4" placeholder="V4" >
+
+    <label for="V11"></label>
+    <input type="V11"  step="any"  id="V11" name="V11" placeholder="V11" >
+
+    <label for="Amount"></label>
+    <input type="number"  step="any"  id="Amount" name="Amount" placeholder="Amount" >
+
+    <select name="req_model">
+    <option value="RandomForest">Random Forest</option>
+    
+  </select>
+
+
+    <input type="submit" value="Predict">
+  </form>
+</form>
+
+<form method="GET">
+    <center><h2><font color="Black"> Fraud Detection: {{ target}}</h2></center>
+</form>
+
+
+</div>
+
+
+</body>
+</html>
